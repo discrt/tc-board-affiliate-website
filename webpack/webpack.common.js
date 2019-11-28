@@ -24,6 +24,10 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pattern.html',
+      template: Path.resolve(__dirname, '../src/pattern.html')
     })
   ],
   resolve: {
